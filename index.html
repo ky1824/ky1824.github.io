@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/web/css/all.css">
+    <title>个人主页</title>
+</head>
+
+<body>
+    <div class="animation">
+        <div class="loader-left">
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="bg">
+            <div class="loader-top">
+            </div>
+        </div>
+        <div class="nav">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">宿舍主页</a></li>
+            <li><a href="./web/subpages/page1.html">我的家乡</a></li>
+            <li><a href="./web/subpages/page2.html">我的学校</a></li>
+            <li><a href="./web/subpages/page3.html">火影忍者</a></li>
+            <li><a href="./web/subpages/page4.html">羽毛球</a></li>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="bgdiv">欢迎来到我的个人网站，很高兴你能来到这里！</div>
+                <div class="blob"></div>
+            </div>
+            <style>
+                .card {
+                    margin-top: 100px;
+                    position: relative;
+                    width: 500px;
+                    height: 250px;
+                    border-radius: 14px;
+                    z-index: 1111;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+                    ;
+                }
+
+                .bgdiv {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: bolder;
+                    font-size: larger;
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    width: 190px;
+                    height: 240px;
+                    z-index: 2;
+                    background: rgba(255, 255, 255, .95);
+                    backdrop-filter: blur(24px);
+                    border-radius: 10px;
+                    overflow: hidden;
+                    outline: 2px solid white;
+                }
+
+                .blob {
+                    position: absolute;
+                    z-index: 1;
+                    top: 50%;
+                    left: 50%;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    background-color: #ff0000;
+                    opacity: 1;
+                    filter: blur(12px);
+                    animation: blob-bounce 5s infinite ease;
+                }
+
+                @keyframes blob-bounce {
+                    0% {
+                        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+                    }
+
+                    25% {
+                        transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+                    }
+
+                    50% {
+                        transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+                    }
+
+                    75% {
+                        transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+                    }
+
+                    100% {
+                        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+                    }
+                }
+            </style>
+        </div>
+    </div>
+    <div class="animation">
+        <div class="loader-right">
+        </div>
+    </div>
+</body>
+
+</html>
